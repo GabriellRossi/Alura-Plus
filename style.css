@@ -4,6 +4,8 @@
   --botao-azul: #167fb7;
   --cor-de-fundo: #00030c;
   --cor-descricao-texto-cursos: #f9f9f9;
+  --cor-botao-ativado: #ccc359;
+  --botao-azul-efeito: #3c92fa;
   --font-principal: 'Inter', sans-serif;
 }
 
@@ -42,6 +44,11 @@ body {
   display: block;
   text-decoration: none;
   margin-bottom: 1em;
+}
+
+.container__botao:hover {
+  background-color: var(--botao-azul-efeito);
+  color: var(--cor-de-fundo);
 }
 
 .botao_secundario {
@@ -127,4 +134,43 @@ body {
   text-align: center;
   color: var(--branco-principal);
   margin-bottom: 145px;
+}
+
+.rodape__lista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 1em;
+}
+
+.lista__link a {
+  text-decoration: none;
+  color: var(--branco-principal);
+  margin-left: 2em;
+  line-height: 24px;
+}
+
+.lista__link a:hover {
+  color: var(--botao-azul);
+}
+
+.lista__link a:active {
+  color: var(--cor-botao-ativado);
+}
+
+.rodape__texto {
+  margin: 2em 0;
+  color: var(--cinza-secundario);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.rodape {
+  text-align: center;
+  margin: 5em 3em;
+}
+
+.rodape__logo {
+  margin-bottom: 2em;
 }
