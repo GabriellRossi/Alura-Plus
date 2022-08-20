@@ -1,8 +1,9 @@
 :root {
-  --branco-principal: #FFFFFF;
-  --cinza-secundario: #C0C0C0;
-  --botao-azul: #167FB7;
-  --cor-de-fundo: #00030C;
+  --branco-principal: #ffffff;
+  --cinza-secundario: #c0c0c0;
+  --botao-azul: #167fb7;
+  --cor-de-fundo: #00030c;
+  --cor-descricao-texto-cursos: #f9f9f9;
   --font-principal: 'Inter', sans-serif;
 }
 
@@ -78,12 +79,18 @@ body {
 .descricao__titulo {
   font-size: 48px;
   font-weight: 700;
+  line-height: 58px;
   color: var(--branco-principal);
   margin-bottom: 0.1em;
+  margin-top: 8px;
 }
 
 .descricao__texto {
   color: var(--cinza-secundario);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(cor-descricao-texto-cursos);
 }
 
 .secundario__botao {
@@ -93,4 +100,31 @@ body {
 
 .container__descricao {
   padding: 2em;
+}
+
+.dispositivos {
+  text-align: center;
+}
+.dispositivos__titulo {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 5em 0;
+}
+
+.lista__item {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+  color: var(--branco-principal);
+  margin-bottom: 145px;
 }
